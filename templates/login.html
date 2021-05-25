@@ -16,18 +16,23 @@
 <body>
     <div class="container text-center d-flex justify-content-center mt-5">
 
-        <form class="form-signin " action="/login" method="POST">
+        <form class="form-signin " action="/login" method="POST" enctype="application/x-www-form-urlencoded">
             <h1 class="h3 mb-3 font-weight-normal">Log in</h1>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control my-2" placeholder="Email address" required autofocus>
+            <label for="usename" class="sr-only">Username</label>
+            <input type="text" id="username" class="form-control my-2" name="username" placeholder="Username" required autofocus>
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input type="password" id="inputPassword" class="form-control" name="passoword" placeholder="Password" required>
             
             <button class="btn btn-lg btn-primary btn-block mt-5" type="submit">Login</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
-          </form>
+        </form>
         
     </div>
+    <hr>
+
+
+    <footer class="text-center">
+        <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+    </footer>
 
 
 
