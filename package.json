@@ -1,0 +1,29 @@
+{
+  "name": "Session-js",
+  "version": "1.0.0",
+  "description": "Basic Session using Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchkim/Session-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchkim/Session-js/issues"
+  },
+  "homepage": "https://github.com/luchkim/Session-js#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "redis": "^3.1.2"
+  }
+}
