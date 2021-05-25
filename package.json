@@ -1,5 +1,5 @@
 {
-  "name": "Sessionjs",
+  "name": "RedisSession",
   "version": "1.0.0",
   "description": "Basic Session using Node.js",
   "main": "app.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luchkim/Session-js.git"
+    "url": "git+https://github.com/luchkim/RedisSession.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luchkim/Session-js/issues"
+    "url": "https://github.com/luchkim/RedisSession/issues"
   },
-  "homepage": "https://github.com/luchkim/Session-js#readme",
+  "homepage": "https://github.com/luchkim/RedisSession#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
