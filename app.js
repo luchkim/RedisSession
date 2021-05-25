@@ -1,5 +1,7 @@
 const express= require('express');
 const cookieParser = require("cookie-parser");
+const fs = require("fs");
+
 const session = require("express-session");
 const app = express();
 
@@ -15,4 +17,4 @@ fs.readdirSync("./routes").map( function(filename){
     app.use("/" + route, module);
 });
 
-app.listen(8081, console.log('Server Started...'));
+app.listen(3000, console.log('Server Started...'));

@@ -13,15 +13,25 @@ const DATABASE = 0;
 
 let redisClient = null;
 
-router.get('/', (req, res)=>{
+router.get('/login', (req, res)=>{
     let result = '';
-    try{
-        redisClient = redis.createClient({host: HOST, db: DATABASE});
-        result = await getData();
-    }
-    catch(err){
-        result = err; 
-    }
+    // try{
+    //     redisClient = redis.createClient({host: HOST, db: DATABASE});
+    //     result = await getData();
+    // }
+    // catch(err){
+    //     result = err; 
+    // }
 
-    let source = fs.readFileSync('./templates/')
-})
+    let source = fs.readFileSync("./templates/login.html");
+    let template = handlebars.compile(source.toString());
+    let data = {
+        table: result
+    }
+    result = template(data); 
+    response.send(result);
+});
+
+
+
+module.exports = router;
